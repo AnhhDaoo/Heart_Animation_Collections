@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heart beat - Rain</title>
-    <link rel="icon" href="heart2.jpg">
+    <link rel="icon" href="media/heart2.jpg">
 
     <style>
         * {
@@ -115,16 +115,25 @@
                 scale: 0;
             }
         }
+
+        audio {
+            position: absolute;
+            top: 90%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="heart">
-            
-        </div>
-        <img src="h2.png" alt="" class="heartimg">
+        <div class="heart"></div>
+        <img src="media/h2.png" alt="" class="heartimg">
     </div>
+
+    <audio controls autoplay loop preload="auto">
+        <source src="media/piano-candywind.mp3" type="audio/mpeg">
+    </audio>
     <script>
         function rain() {
             let heart = document.querySelector('.heart');

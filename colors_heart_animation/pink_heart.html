@@ -3,7 +3,7 @@
 
 <head>
     <title> Pink Heart Animation </title>
-    <link rel="icon" href="heart2.jpg">
+    <link rel="icon" href="media/heart2.jpg">
     <meta name="Generator" content="EditPlus">
     <meta name="Author" content="">
     <meta name="Keywords" content="">
@@ -22,11 +22,21 @@
             width: 100%;
             height: 100%;
         }
+
+        audio {
+            position: absolute;
+            top: 90%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
 <body>
     <canvas id="pinkboard"></canvas>
+    <audio controls autoplay loop preload="auto">
+        <source src="media/piano-simplemelody.mp3" type="audio/mpeg">
+    </audio>
     <script>
         var settings = {
             particles: {

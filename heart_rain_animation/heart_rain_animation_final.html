@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashing heart beat - Rain</title>
-    <link rel="icon" href="heart2.jpg">
+    <link rel="icon" href="media/heart2.jpg">
 
     <style>
         * {
@@ -86,8 +86,6 @@
             50% {
                 transform: scale(1.2);
                 opacity: 1;
-                /* filter: drop-shadow(0 0 20px #f00) drop-shadow(0 0 60px #f00);
-                background: #f00; */
             }
         }
 
@@ -164,6 +162,13 @@
                 scale: 0;
             }
         }
+
+        audio {
+            position: absolute;
+            top: 90%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
@@ -172,8 +177,12 @@
         <div class="heart">
 
         </div>
-        <img src="h2.png" alt="" class="heartimg">
+        <img src="media/h2.png" alt="" class="heartimg">
     </div>
+
+    <audio controls autoplay loop preload="auto">
+        <source src="media/piano-daylightcutting.mp3" type="audio/mpeg">
+    </audio>
     <script>
         function rain() {
             let heart = document.querySelector('.heart');

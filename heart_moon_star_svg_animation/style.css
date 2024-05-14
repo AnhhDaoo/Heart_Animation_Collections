@@ -95,3 +95,10 @@ body{
         fill: #31e8ff;
     }
 }
+
+audio {
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
